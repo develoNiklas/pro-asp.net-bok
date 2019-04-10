@@ -10,6 +10,9 @@ namespace LanguageFeatures.Models
         public string Name { get; set; }
         public decimal? Price { get; set; }
         public Product Related { get; set; }
+        public string Name { get; set; }
+        public decimal? Price { get; set; }
+        public Product Related { get; set; }
         public static Product[] GetProducts()
         {
             Product kayak = new Product
