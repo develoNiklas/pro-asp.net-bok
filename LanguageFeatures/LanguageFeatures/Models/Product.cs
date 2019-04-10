@@ -27,7 +27,7 @@ namespace LanguageFeatures.Models
                 Category = "Water Craft",
                 Price = 275M
             };
-            Product lifejacket = new Product
+            Product lifejacket = new Product(false)
             {
                 Name = "Lifejacket",
                 Price = 48.95M
