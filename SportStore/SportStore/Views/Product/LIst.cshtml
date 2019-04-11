@@ -1,7 +1,10 @@
-﻿@model IEnumerable<String>
-@{
-    ViewData["Title"] = "LIst2";
+﻿@model IEnumerable<Product>
+@using SportStore.Models
+@foreach (var p in Model)
+{
+    <div>
+        <h3>@p.Name</h3>
+        @p.Description
+        <h4>@p.Price.ToString("c")</h4>
+    </div>
 }
-
-<h2>LIst2</h2>
-
