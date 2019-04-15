@@ -4,7 +4,9 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 namespace SportsStore.Models {
 
     public class Product {
-        [Required(ErrorMessage = "Please enter a product name")]
+        public int ProductID { get; set; }
+        [Required(ErrorMessage = "Please enter a product
+                [Required(ErrorMessage = "Please enter a product name")]
         public string Name { get; set; }
         [Required(ErrorMessage = "Please enter a description")]
         public string Description { get; set; }
